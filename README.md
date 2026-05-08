@@ -24,3 +24,11 @@ docker run -p 5000:5000 devops-app
 ## ☸️ Deploy to Kubernetes
 
 kubectl apply -f k8s-deployment.yaml
+
+## 📊 Monitoring Dashboard
+
+### Grafana Dashboard
+![Grafana](docs/grafana-dashboard.png)
+
+### Prometheus Targets
+![Prometheus](docs/prometheus-targets.png)
