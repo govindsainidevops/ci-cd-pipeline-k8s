@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "your-dockerhub-username/devops-app"
+        DOCKER_IMAGE = "govindsaini442/devops-app"
     }
 
     stages {
 
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/your-username/ci-cd-pipeline-k8s.git'
+                git 'https://github.com/govindsainidevops/ci-cd-pipeline-k8s.git'
             }
         }
 
