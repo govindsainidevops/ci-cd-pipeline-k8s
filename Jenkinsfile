@@ -30,7 +30,11 @@ pipeline {
             }
         }
 
+        // Disable temporarily
         stage('Deploy to Kubernetes') {
+            when {
+                expression { false }
+            }
             steps {
                 sh 'kubectl apply -f k8s-deployment.yaml'
             }
