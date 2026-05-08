@@ -14,9 +14,11 @@ spec:
     spec:
       containers:
       - name: devops-app
-        image: govindsaini442/devops-app:latest
+        image: devops-app:v2
+        imagePullPolicy: Never
         ports:
         - containerPort: 5000
+
 ---
 apiVersion: v1
 kind: Service
